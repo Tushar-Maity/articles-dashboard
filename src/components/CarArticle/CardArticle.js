@@ -22,7 +22,7 @@ const CardArticle = ({ article }) => {
         </div>
             <div className="article__card">
                 <div className="article__card__Detail">
-                    <h2>{truncate(article.title, 40)}</h2>
+                    <h2>{truncate(article.title, 35)}</h2>
                     <h3>{truncate(article.summary, 40)}</h3>
                     <p>{article.published}</p>
                 </div>

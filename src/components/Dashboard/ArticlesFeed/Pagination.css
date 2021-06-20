@@ -1,0 +1,28 @@
+.container__Paginate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__Paginate > ul {
+    display: flex;
+    list-style: none;
+}
+
+.container__Paginate >ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    background: #ddd;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+.container__Paginate >ul > li:active {
+    background: #ffffff;
+}
