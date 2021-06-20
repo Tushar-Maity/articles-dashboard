@@ -1,9 +1,9 @@
-.article__Container {
+.article__Container__list {
     display: flex;
     align-items: center;
 }
 
-.article {
+.article__list {
     display: flex;
     align-items: center;
     background: #ffffff;
@@ -15,27 +15,27 @@
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
 }
 
-.article > img {
+.article__list > img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.article__Detail > h2 {
+.article__list__Detail > h2 {
         font-size: 18px;
 }
 
-.article__Detail > h3 {
+.article__list__Detail > h3 {
     font-size: 16px;
 }
 
-.article__Detail > p {
+.article__list__Detail > p {
     font-size: 14px;
     color: #444;
 }
 
-.delete {
+.delete__list {
     height: 50px;
     width: 50px;
     background: #ffffff;
@@ -48,6 +48,6 @@
     cursor: pointer;
 }
 
-.delete > svg {
+.delete__list > svg {
     fill: red;
 }

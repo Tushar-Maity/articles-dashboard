@@ -10,18 +10,18 @@ const ListArticle = ({ article }) => {
         return string?.length > n ? string.substr(0, n-1) + '...' : string
     }
     return (
-        <div className="article__Container">
-            <div className="article">
+        <div className="article__Container__list">
+            <div className="article__list">
                 <img src={article.image ? article.image : 'https://source.unsplash.com/random/40x40'} alt="article"/>
 
-                <div className="article__Detail">
+                <div className="article__list__Detail">
                     <h2>{truncate(article.title, 60)}</h2>
                     <h3>{truncate(article.summary, 70)}</h3>
                     <p>{article.published}</p>
                 </div>
             </div>
 
-            <div className="delete">
+            <div className="delete__list">
                 <VscChromeClose size="28px"/>
             </div>
         </div>

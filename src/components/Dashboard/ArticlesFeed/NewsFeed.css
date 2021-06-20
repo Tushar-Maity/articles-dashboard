@@ -1,0 +1,19 @@
+.articles__container {
+    min-height: 100vh;
+    padding: 30px 40px;
+    margin: 0 auto;
+}
+
+.list__Grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__Grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

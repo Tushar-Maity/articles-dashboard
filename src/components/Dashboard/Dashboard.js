@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 import './Dashboard.css'
 
-import Sidebar from './Sidebar'
-import NewsFeed from './NewsFeed'
+import Sidebar from './SideBar/Sidebar'
+import NewsFeed from './ArticlesFeed/NewsFeed'
 
 const Dashboard = ({ data }) => {
 
