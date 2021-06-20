@@ -1,9 +1,19 @@
 import React from 'react'
 
-const NewsFeed = () => {
+import './NewsFeed.css'
+
+import ListArticle from './ListArticle'
+import CardArticle from './CardArticle'
+
+const NewsFeed = ({ data, cardView, listView }) => {
     return (
-        <div>
-            <h2>I m the NewsFeed</h2>
+        <div className="articles__container">
+            {data.map(article => (
+                <div key={article.id}>
+                    {listView && <ListArticle article={article}/>}
+                    {cardView && <CardArticle article={article}/>}
+                </div>
+            ))}
         </div>
     )
 }

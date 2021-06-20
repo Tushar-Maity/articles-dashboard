@@ -18,7 +18,10 @@ const Dashboard = ({ data }) => {
             listView={listView} 
             setListView={setListView}/>
 
-            <NewsFeed data={data} cardView={cardView} listView={listView}/>
+            <NewsFeed 
+            data={data} 
+            cardView={cardView} 
+            listView={listView}/>
         </div>
     )
 }
