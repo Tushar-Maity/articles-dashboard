@@ -33,7 +33,7 @@ const Pagination = ({ currentPage, setCurrentPage, articlesPerPage, totalArticle
                     <li
                     key={number}
                     onClick={() => paginate(number)}
-                    className={currentPage == number ? "active" : null}>
+                    className={currentPage === number ? "active" : null}>
                         {number}
                     </li>
                 )}

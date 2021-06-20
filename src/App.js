@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div>
-       <Dashboard data={data}/>
+       <Dashboard data={data} setData={setData}/>
     </div>
   );
 }

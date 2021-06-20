@@ -4,19 +4,16 @@ import './CardArticle.css'
 
 import { VscChromeClose } from 'react-icons/vsc'
 
-const CardArticle = ({ article }) => {
+const CardArticle = ({ article, removeHandler }) => {
 
     const truncate = (string, n) => {
         return string?.length > n ? string.substr(0, n-1) + '...' : string
     }
 
-    const cardRemove = (id) => {
-        console.log(id);
-    }
     return (
         <div className="article__Container__card">
         <div className="delete__card" onClick={() => {
-            cardRemove(article.id)
+            removeHandler(article.id)
         }}>
             <VscChromeClose size="25px" />
         </div>

@@ -5,7 +5,7 @@ import './Dashboard.css'
 import Sidebar from './SideBar/Sidebar'
 import NewsFeed from './ArticlesFeed/NewsFeed'
 
-const Dashboard = ({ data }) => {
+const Dashboard = ({ data, setData }) => {
 
     const [cardView, setCardView] = useState(false)
     const [listView, setListView] = useState(true)
@@ -21,7 +21,9 @@ const Dashboard = ({ data }) => {
             <NewsFeed 
             data={data} 
             cardView={cardView} 
-            listView={listView}/>
+            listView={listView}
+            setData={setData}
+            />
         </div>
     )
 }
