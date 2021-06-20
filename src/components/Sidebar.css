@@ -1,0 +1,107 @@
+.sidebar__Container {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBF2F7;
+    min-height: 100vh;
+    width: 380px;
+    padding: 60px 45px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.profile > img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile > h3 {
+    font-size: 17px;
+}
+
+.profile > p {
+    font-size: 13px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    background: #ffffff;
+}
+
+.toggle > h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.toggle__Icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: beige;
+    overflow: hidden;
+}
+
+.card {
+    cursor: pointer;
+    padding: 6px 20px;
+}
+
+.card > svg {
+    color: #282929;
+}
+
+.list {
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+.list > svg {
+    color: #282929;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    margin-bottom: 30px;
+}
+
+.feedback > h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.feedback > button {
+    width: 100%;
+    background-color: #96ebc7;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
