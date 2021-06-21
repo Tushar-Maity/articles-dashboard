@@ -5,15 +5,21 @@ import countryList from 'react-select-country-list'
 
 import './FeedForm.css'
 
-const FeedForm = () => {
+const FeedForm = ({ setFormActive }) => {
     const [countrySL, setCountrySL] = useState('')
     const options = useMemo(() => countryList().getData(), [])
 
     const changeHandler = value => {
         setCountrySL(value)
     }
+
+    const formClose = (e) => {
+        if(e.target.classList.contains('backdrop')) {
+            setFormActive(false)
+        }
+    }
     return (
-        <div className="container__Form">
+        <div className="container__Form backdrop" onClick={formClose}>
             <div className="form__Wrap">
                 <h1>Thank you so much for taking the time!</h1>
                 <p>Please provide the below details</p>
@@ -46,7 +52,9 @@ const FeedForm = () => {
                     <div className="input__Group">
                         <div className="label">Country : </div>
                         <div className="country">
-                            <Select options={options} countrySL={countrySL} onChange={changeHandler} />
+                        <div className="select">
+                        <Select options={options} countrySL={countrySL} onChange={changeHandler} />
+                        </div>
                         </div>
                     </div>
                     <div className="input__Group">

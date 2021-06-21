@@ -30,7 +30,7 @@ const Dashboard = ({ data, setData }) => {
             listView={listView}
             setData={setData}
             />
-            {formActive && <FeedForm />}
+            {formActive && <FeedForm setFormActive={setFormActive}/>}
         </div>
     )
 }

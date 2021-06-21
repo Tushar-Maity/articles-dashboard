@@ -5,8 +5,13 @@ import './NewsFeed.css'
 import Pagination from './Pagination'
 import ListArticle from '../../ListArticle/ListArticle'
 import CardArticle from '../../CarArticle/CardArticle'
+import Modal from './Modal'
 
 const NewsFeed = ({ data, cardView, listView, setData }) => {
+
+
+    const [modalOpen, setModalOpen] = useState(false)
+    const [modalData, setModalData] = useState({})
 
     const [currentPage, setCurrentPage] = useState(1)
     const [articlesPerPage] = useState(6)
@@ -28,13 +33,13 @@ const NewsFeed = ({ data, cardView, listView, setData }) => {
         <div className="articles__container">
            <div className="list__Grid" listView={listView} style={{marginBottom: listView ? '15px' : ''}}>
                 {listView && currentArticles.map(article => (
-                    <ListArticle key={article.id} article={article} removeHandler={removeHandler}/>
+                    <ListArticle key={article.id} article={article} removeHandler={removeHandler} setModalOpen={setModalOpen} setModalData={setModalData}/>
                 ))}
            </div>
 
            <div className="card__Grid" cardView={cardView} style={{marginBottom: cardView ? '20px' : ''}}>
                 {cardView && currentArticles.map(article => (
-                    <CardArticle key={article.id} article={article} removeHandler={removeHandler}/>
+                    <CardArticle key={article.id} article={article} removeHandler={removeHandler}setModalOpen={setModalOpen} setModalData={setModalData}/>
                 ))}
            </div>
            <Pagination 
@@ -44,6 +49,7 @@ const NewsFeed = ({ data, cardView, listView, setData }) => {
            totalArticles={data.length}
            paginate={paginate}    
            />
+           { modalOpen && <Modal modalData={modalData} setModalData={setModalData}/>}
         </div>
     )
 }

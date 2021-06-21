@@ -49,7 +49,9 @@ const Sidebar = ({ cardView, setCardView, listView, setListView, formActive, set
 
             <div className="feedback">
                 <h2>Have a Feedback?</h2>
-                <button onClick={() => setFormActive(!formActive)}>We're Listening</button>
+                <button onClick={() => setFormActive(!formActive)}
+                formActive={formActive}
+                style={{backgroundColor: formActive ? '#daa4a1' : '#96ebc7'}}>We're Listening</button>
             </div>
         </div>
     )

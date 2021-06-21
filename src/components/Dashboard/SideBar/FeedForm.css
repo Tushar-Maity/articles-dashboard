@@ -45,7 +45,7 @@
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
 }
 
-.input__Group > address {
+.input__Group > .address {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
     border: none;
     outline: none;
@@ -72,6 +72,10 @@
     width: 300px !important;
 }
 
+.select {
+    width: 100%;
+}
+
 .country:focus {
     box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
 }
@@ -93,13 +97,21 @@
     display: flex;
 }
 
-.phoneNumber.code {
+.phoneNumber > .code {
     width: 50px;
+    padding: 10px;
+    border: none;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
 }
 
-.phoneNumber.number {
+.phoneNumber > .number {
     width: 240px;
     margin-left: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
 }
 
 .form > button {

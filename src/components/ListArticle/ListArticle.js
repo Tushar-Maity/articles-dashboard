@@ -4,14 +4,19 @@ import './ListArticle.css'
 
 import { VscChromeClose } from 'react-icons/vsc'
 
-const ListArticle = ({ article, removeHandler }) => {
+const ListArticle = ({ article, removeHandler, setModalOpen, setModalData }) => {
 
     const truncate = (string, n) => {
         return string?.length > n ? string.substr(0, n-1) + '...' : string
     }
+
+    const openModal = () => {
+        setModalOpen(true)
+        setModalData(article)
+    }
     return (
         <div className="article__Container__list">
-            <div className="article__list">
+            <div className="article__list" onClick={openModal}>
                 <img src={article.image ? article.image : 'https://source.unsplash.com/random/40x40'} alt="article"/>
 
                 <div className="article__list__Detail">
