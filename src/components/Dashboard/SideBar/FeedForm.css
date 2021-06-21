@@ -1,0 +1,114 @@
+.container__Form {
+    position: absolute;
+    top: 0;
+    left: 280px;
+    background: rgba(0,0,0, .5);
+    width: calc(100vw - 280px);
+    height: 100vh;
+}
+
+.form__Wrap {
+    background-color: #EBF2F7;
+    max-width: 900px;
+    padding: 40px 18px 18px 60px;
+    height: 100vh;
+}
+
+.form__Wrap > h1 {
+    font-size: 21px;
+}
+
+.form__Wrap > p{
+    font-size: 15px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.input__Group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input__Group > input {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.input__Group > input:focus {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+.input__Group > address {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    width: 500px;
+    height: 100px;
+}
+
+.input__Group > address:focus {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+.label {
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+    width: 300px !important;
+}
+
+.country:focus {
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+.country > input {
+    width: 300px !important;
+    box-shadow: none;
+}
+
+.country > input:focus {
+    box-shadow: none;
+}
+
+.country > svg {
+    margin-left: -30px;
+}
+
+.phoneNumber {
+    display: flex;
+}
+
+.phoneNumber.code {
+    width: 50px;
+}
+
+.phoneNumber.number {
+    width: 240px;
+    margin-left: 10px;
+}
+
+.form > button {
+    padding: 10px;
+    background-color: #96EBC7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
