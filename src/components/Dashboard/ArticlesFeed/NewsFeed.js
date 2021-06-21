@@ -49,7 +49,7 @@ const NewsFeed = ({ data, cardView, listView, setData }) => {
            totalArticles={data.length}
            paginate={paginate}    
            />
-           { modalOpen && <Modal modalData={modalData} setModalData={setModalData}/>}
+           { modalOpen && <Modal modalData={modalData} setModalOpen={setModalOpen}/>}
         </div>
     )
 }
